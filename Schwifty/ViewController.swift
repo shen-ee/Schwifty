@@ -11,11 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var wv:UIWebView?
+    @IBOutlet var test:UIWebView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         wv?.loadRequest(NSURLRequest(url:NSURL(string:"http://123.206.47.235") as! URL) as URLRequest)
+        wv?.loadRequest(NSURLRequest(url:NSURL(string:"http://www.baidu.com") as! URL) as URLRequest)
     }
 
     override func didReceiveMemoryWarning() {
